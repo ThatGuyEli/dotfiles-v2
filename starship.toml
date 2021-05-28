@@ -1,0 +1,19 @@
+[character]
+success_symbol = "[❯❯❯](bold green)"
+error_symbol = "[❯❯❯](bold red)"
+
+[cmd_duration]
+min_time = 1000
+
+[directory]
+style = "purple"
+
+[git_branch]
+style = "purple"
+[git_status]
+style = "red"
+
+[hostname]
+ssh_only = false
+format = "[$hostname](cyan) "
+trim_at = ".local"
