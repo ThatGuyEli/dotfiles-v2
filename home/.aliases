@@ -13,7 +13,7 @@ alias egrep='egrep --color=always'
 
 # Minor ripgrep changes.
 alias rg='rg --hidden'
-alias rgf='rg --hidden --files | rg'
+alias rgf='rg --hidden --files --ignore-file ~/.gitignore | rg'
 
 # Safety measures to prevent accidental overwriting.
 alias cp='cp -i'
@@ -35,6 +35,8 @@ alias ...='cd ../..'
 alias .3='cd ../../..'
 alias .4='cd ../../../..'
 alias .5='cd ../../../../..'
+alias fzf='rg --hidden --files --ignore-file ~/.gitignore | fzf'
+#alias fzy='rg --hidden --files --ignore-file ~/.gitignore | fzy'
 
 # Package Management
 alias update='~/.dotfiles/scripts/update.sh'
